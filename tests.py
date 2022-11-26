@@ -25,7 +25,7 @@ class TestBooksCollector:
     def test_add_new_book_name_in_the_dictionary(self):
         collector1 = BooksCollector()
         collector1.add_new_book('Что такое тестирование')
-        assert 'Что такое тестирование' in collector1.books_rating
+        assert 'Что такое тестирование' in collector1.get_books_rating()
 
     def test_set_book_rating_rating_of_a_nonexistent_book(self):
         collector2 = BooksCollector()
