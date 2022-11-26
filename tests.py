@@ -64,7 +64,7 @@ class TestBooksCollector:
         collector6.add_new_book('Иллюзия')
         collector6.add_book_in_favorites('Иллюзия')
         collector6.add_book_in_favorites('Иллюзия')
-        assert len(collector6.favorites) == 1
+        assert len(collector6.get_list_of_favorites_books()) == 1
 
     def test_delete_book_from_favorites_movie_deleted(self):
         collector7 = BooksCollector()
