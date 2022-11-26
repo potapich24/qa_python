@@ -31,7 +31,7 @@ class TestBooksCollector:
         collector2 = BooksCollector()
         collector2.add_new_book('Мост через вечнось')
         collector2.set_book_rating('Момо', 8)
-        assert collector2.books_rating['Мост через вечнось'] != 8 and 'Момо' not in collector2.books_rating
+        assert collector2.get_book_rating('Мост через вечнось') != 8 and 'Момо' not in collector2.get_books_rating()
 
     def test_get_book_rating_rating_by_name(self):
         collector3 = BooksCollector()
