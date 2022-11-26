@@ -36,7 +36,7 @@ class TestBooksCollector:
     def test_get_book_rating_rating_by_name(self):
         collector3 = BooksCollector()
         collector3.add_new_book('Замок Броуди')
-        assert collector3.books_rating.get('Замок Броуди') == collector3.get_book_rating('Замок Броуди')
+        assert 1 == collector3.get_book_rating('Замок Броуди')
 
     def test_get_books_with_specific_rating_selection_by_rating(self):
         collector4 = BooksCollector()
