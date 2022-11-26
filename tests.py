@@ -73,7 +73,7 @@ class TestBooksCollector:
         collector7.add_book_in_favorites('Подземка')
         collector7.add_book_in_favorites('Хроники нарнии')
         collector7.delete_book_from_favorites('Подземка')
-        assert 'Подземка' not in collector7.favorites and 'Хроники нарнии' in collector7.favorites
+        assert 'Подземка' not in collector7.get_list_of_favorites_books() and 'Хроники нарнии' in collector7.get_list_of_favorites_books()
 
     def test_get_list_of_favorites_books_list_output(self):
         collector8 = BooksCollector()
